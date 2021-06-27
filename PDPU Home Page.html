@@ -1,0 +1,753 @@
+<!Doctype html>
+<title>PDPU Website</title>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/90a7a1bc67.js" crossorigin="anonymous"></script>
+        <!-- xyz -->
+        <link rel="stylesheet" href="PDPU.css">
+    </head>
+    <body>
+        <style type="text/css">
+            html,body{
+                font-family: 'Playfair Display SC', serif;
+                margin:0;
+                padding:0;
+                width:100%;
+                background-color: #d3d3d3;
+                overflow-x:hidden;
+            }
+        </style>
+        <div class="container1">
+            <table>
+                <tr>
+                    <td><img class="logo" src="logo.png" alt="PDPU Logo"></td>
+                    
+                    <td><p class="name" >PDPU</p></td>
+                    <td><p><em >Pandit Deendayal </em></p>
+                    <p><em> Petroleum University</em></p>
+                </td>
+                </tr>
+               
+            </table>
+        
+         </div>
+         <!-- This style is for Navigation Bar -->
+         <style type="text/css">
+            .container1{
+                margin: 0px;
+                padding: 0px;
+                text-align:center;
+                background:#234e88;
+                color: #c9c0c0;
+            }
+
+            .logo{
+                height:120px;
+                padding:0px 20px 5px 130px;
+            }
+            .name{
+                font-size: 80px;
+                margin: auto 20px auto auto; 
+            }
+            p{
+                font-size: 18px;
+            }
+         </style>
+         <style type=text/css>
+            .nav {
+                overflow: hidden;
+                background-color:#009a59;
+                height: 50px;
+            }
+            .nav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: right;
+                padding: 14px 10px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .nav a.centered, .nav a.centered2, .nav a.centered3,.nav a.centered4,.nav a.centered5,.nav a.centered6,.nav a.centered7{
+                float:none;
+                position: absolute;   
+            } 
+            .nav a.centered{
+                left: 10%;
+            }
+            .nav a.centered2{
+                left: 20%;
+            }
+            .nav a.centered3{
+                left: 30%;
+            }
+
+            .nav a.centered4{
+                left: 40%;
+            }
+            .nav a.centered5{
+                left: 50%;
+            }
+            .nav a.centered6{
+                left: 60%;
+            }
+            .nav a.centered7{
+                left: 70%;
+            }
+            .nav a:hover {
+                background-color:white;
+                color:black;
+            }
+  
+  
+            .nav a.active {
+                background-color: #fff;
+                color:black;
+            }
+  
+            .nav input[type=text] {
+                float: right;
+                padding: 6px;
+                border: none;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+            }
+  
+  
+            @media screen and (max-width: 750px) {
+                .nav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .nav input[type=text] {
+                border: 1px solid #ccc;
+            }
+            .nav a{
+                height:230px;
+                flex-direction:column;
+                text-align:center;
+            }
+        }
+        </style>
+        
+        <div class="nav">
+            <a class="active centered" href="#home" onCLick="countHome();">Home</a>
+            <a class=" centered2" href="#about" onCLick="countAbout();" >About</a>
+            <a class=" centered3" href="#research" onCLick="countResearch();">Research</a>
+            <a class=" centered4" href="#admission">Admission</a>
+            
+            <a class=" centered5" href="#campus">Campus Life</a>
+            <a class=" centered6" href="#placement">Placements</a>
+            <a class=" centered7" href="#activity">Student Activity</a>
+            <input type="text" placeholder="Search...">
+          </div>
+
+          <!-- This is Javascript Code for 3 Buttons-Home,About & Research -->
+          <script type="text/javascript">
+            var i=0;
+            var j=0;
+            var k=0;
+            function countHome(){
+                i++;
+                alert("You have clicked Home button" +" "+ i +" "+"times");
+            }
+            function countAbout(){
+                j++;
+                alert("You have clicked About button" +" "+ j +" "+"times");
+            }
+            function countResearch(){
+                k++;
+                alert("You have clicked Research button" +" "+ k +" "+"times");
+            }
+         </script>
+         
+         <div id="slider">
+              <figure>
+                <img  src="pandit-deendayal.jpg" alt="Entrance">
+                <img  src="infrastructure.jpg" alt="PDPU Logo">
+                <img  src="sot-building.jpg" alt="Campus">
+                <img  src="pdpu-convocation.jpg" alt="PDPU Logo">
+                <img  src="night-life.jpg" alt="PDPU Logo">
+            
+                </figure>
+        
+          </div>
+          <!-- This is for Carasoul Styling -->
+          <style type="text/css">
+            #slider{
+             overflow: hidden;
+
+            }
+            #slider figure{
+                position: relative;
+                width: 500%;
+                margin:0;
+                left:0;
+                animation: 25s slider infinite;
+            }
+            #slider figure img{
+                float:left;
+                width: 20%;
+                height:540px;
+            }
+            @keyframes slider{
+                0%{
+                    left:0;
+                }
+                15%{
+                    left:0;
+
+                }
+                20%{
+                    left:-100%;
+                }
+                35%{
+                    left:-100%;
+                }
+                40%{
+                    left:-200%;
+                }
+                55%{
+                    left:-200%;
+                }
+                60%{
+                    left:-300%;
+                }
+                75%{
+                    left:-300%;
+                }
+                80%{
+                    left:-400%;
+                }
+                95%{
+                    left:-400%;
+                }
+            }
+            </style>
+         
+          <div class="slider">
+              <div class="images">
+                  <input type="radio" name="slide" id="img1" checked>
+                  <input type="radio" name="slide" id="img2">
+                  <input type="radio" name="slide" id="img3">
+                  <input type="radio" name="slide" id="img4">
+                  <input type="radio" name="slide" id="img5">
+                  <img src="pdpu-main-gate.jpg" class="m1" alt="img1">
+                  <img src="pdpu-campus.jpg" class="m2" alt="img2">
+                  <img src="pdpu-campus-ground.jpg" class="m3" alt="img3">
+                  <img src="pdpu-campus-building.jpg" class="m4" alt="img4">
+                  <img src="pdpu-campus-lawn.jpg" class="m5" alt="img5">
+              </div>
+              <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+                <label for="img5"></label>
+              </div>
+          </div>
+          <!-- This is for small slider styling -->
+          <style type="text/css">
+            .slider{
+                position:relative;
+                width:32%;
+                overflow:hidden;
+                padding:20px 0px;
+                left:500px;
+                margin-top:50px;
+            }
+            .images{
+                display:flex;
+                width:100%;
+            }
+            .images img{
+                height:400px;
+                width:100%;
+                transition:all 0.15s ease;
+            }
+            .images input{
+                display:none;
+            }
+            .dots{
+                display:flex;
+                justify-content:center;
+                margin:5px;
+            }
+            .dots label{
+                height:20px;
+                width:20px;
+                border-radius:50%;
+                border:solid blue 3px;
+                cursor:pointer;
+                transition:all 0.15s ease;
+                margin:5px;
+            }
+            .dots label:hover{background:blue;}
+            #img1:checked ~ .m1{
+                margin-left:0;
+            }
+            #img2:checked ~ .m2{
+                margin-left:-100%;
+            }
+            #img3:checked ~ .m3{
+                margin-left:-200%;
+            }
+            #img4:checked ~ .m4{
+                margin-left:-300%;
+            }
+            #img5:checked ~ .m5{
+                margin-left:-400%;
+            }
+          </style>
+        
+          <div class="main-content">
+            <div class="content">
+                <div class="content-item1">
+                    <h1>ABOUT PDPU</h1>
+                        <ul>
+                
+                            <li>
+                                <p>India has recognised this fact and has </p>
+                                <p>embarked upon a comprehensive </p>
+                                <p>strategy to address the concerns of </p>
+                                    <p>energy security of India. The need </p>
+                                    <p>for a resource center was anticipated</p>
+                                    <p>to keep the fast developing and</p>
+                                <p>competitive energy industry, to plan for 
+                                    <p>the future and to continuously build </p>
+                                   <p> requisite intellectual capital and </p>
+                                    <p>human resource skills.</p></li>
+                            <li><a href="">View More</a></li>
+                   
+                        </ul>
+                </div>
+                <div class="content-item3">
+                    <h1>News</h1>
+                    <ul>
+                    <p><a href=""><strong>Classes and Registeration-Autumn 2020-21</strong></a></p>
+                        <li><p><em>July 27,2020</em></p></li>
+                    <hr>
+                    <p><a href=""><strong>Job Opening for Research Assistant,2020-21</strong></a></p>
+                        <li><p><em>June 17,2020</em></p></li>
+                    <hr>
+                    <p><a href=""><strong>Admission for New Commers</strong></a></p>
+                        <li><p><em>July 20,2021</em></p></li>
+                    <hr>
+                    <p><a href=""><strong>Online classes continuing due to COVID-19</strong></a></p>
+                    <p><em>April 1,2020</em></p>
+                        <li> <a href="">View All News</a></li>
+                    </ul>
+                </div>
+                <div class="content-item2">
+                    <h1>Important Web Links And Events</h1>
+                    <ul>
+                        <li><a href=""><strong>Ministry of Human Resource Development, Government of India</strong></a></li>
+                        <li><a href=""><strong>Handbook on issues of Sexual Harassment of Women</strong></a></li>
+                        <hr>
+                        <li><p><a href=""><strong>Online Workshop on Machine Learning & Artifcial Intelligence</strong></a></p></li>
+                        <p><em>Sept. 1 - Sept. 30,2020</em></p>
+                        <hr>
+                        <li><p><a href=""><strong>Certification courses available on different fields</strong></a></p></li>
+                        <p><em>April 1,2020</em></p>
+                         <a href="" class="link">View All Events</a>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- Styling for Main Content -->
+            <style type="text/css">
+                .main-content{
+                    margin-top:30px;
+                }                 
+                .content{
+                    margin:30px 200px;
+                    padding:30px auto;
+                    height:500px;
+                    display:flex;
+                    flex-wrap:flex;
+                }
+                .content-item1{
+                    width:45%;
+                    padding:10px 45px;
+                    box-sizing:border-box;
+                    line-height:17px;
+                    list-style: none;
+                    height:600px;
+                    background:#fff;
+                }
+                .content-item1 a{
+                    text-decoration:none;
+                    background:#00121b;
+                    color:#fff;
+                    padding:10px 20px;
+                    font-family: 'Raleway', sans-serif;
+                    position:relative;
+                    top:80px;
+                    left:100px;
+                }
+                .content-item3 ul li a{
+                    text-decoration:none;
+                    background:#00121b;
+                    color:#fff;
+                    padding:10px;
+                    font-family: 'Raleway', sans-serif;
+                    position:relative;
+                    top:115px;
+                    left:100px;
+                }
+                .content-item1 a:hover,.content-item3 ul li a:hover{
+                    background:blue;
+                    color:#fff;
+                }
+                .content-item2,.content-item3{
+                    width:45%;
+                    padding:10px 20px;
+                    box-sizing:border-box;
+                    line-height:25px;
+                    font-family: 'Raleway', sans-serif;
+                    background:#fff;
+                    left:600px;
+                    height:600px;
+                    
+                }
+                .content{
+                    border-style: outset;
+                    border-width: 7px;
+                    border-color: black;
+                    height:600px;
+                }
+                .content-item3{
+                    line-height:16px;
+                }
+                .content-item3 ul a{
+                    text-decoration:none;
+                    color:black;
+                }
+                .content-item3 ul a:hover{
+                    color:blue;
+                }
+               
+                .content-item2 h1{
+                    text-align:center;
+                    font-family: 'Playfair Display SC', serif;
+                }
+                .content-item3 h1{
+                    font-family: 'Playfair Display SC', serif;
+                }
+                .content-item1 ul,.content-item3 ul{
+                    list-style:none;
+                    text-align:left;
+                    padding:0px;
+                    height:280px;
+                }
+  
+                .content-item2 ul li a{
+                    text-decoration:none;
+                    
+                }
+                .content-item2 p a{
+                    text-decoration:none;
+                    color:black;
+                }
+                .content-item2 p a:hover{
+                    color:blue;
+                }
+                .content-item2 ul li a:hover{
+                    color:blue;
+                }
+                .content-item2 ul a{
+                    top:30px;
+                    left:50px;
+                }
+                .link{
+                    text-decoration:none;
+                    background:#00121b;
+                    padding:10px;
+                    color:#fff;
+                    position:relative;
+                    top:40px;
+                }
+                .link:hover{
+                    background:blue;
+                    color:#fff;
+                }
+  
+                .content h1{
+                    margin:30px auto;
+                    font-size:22px;
+                    color:red;
+                }
+                .content p{
+                    font-family: 'Raleway', sans-serif;
+                    font-size:16px;
+                }
+            </style>
+        <div class="placement">
+            <h1>Placement Statistics</h1>
+            
+            <div class="inner-placement">
+                 <div class="placement-container">
+                    <h3>No. of Dream Company Offers</h3>
+                    <p>130+</p>
+                </div>
+                <div class="placement-container">
+                    <h3>Average Package( <i class="fas fa-rupee-sign"></i> Per Annum)</h3>
+                    <p>8+ Lakh</p>
+                </div>
+                <div class="placement-container">
+                    <h3>Highest Package( <i class="fas fa-rupee-sign"></i> Per Annum)</h3>
+                    <p>20+ Lakh</p>
+                </div>
+                <div class="knowing-more"><a href="" >KNOW MORE</a></div>
+            </div>
+        </div>
+        <!-- This is for placement part Styling -->
+        <style type="text/css">
+            .placement h1{
+                text-align:center;
+                color:grey;
+                padding:30px 30px 10px 30px;
+                height:100px;
+                width:100%;
+            }
+            h3{
+                font-family: 'Raleway', sans-serif;
+            }
+            .placement{
+    
+                height:500px;
+                width:auto;
+                background-image: url("pdpu-placement.jpeg");
+                padding:20px auto;
+                margin:100px auto 50px auto;
+            }
+            .placement p{
+                text-align:center;
+                color:blue;
+                font-family: 'Raleway', sans-serif;
+                font-size:25px;
+            }
+            .inner-placement{
+                display:flex;
+                flex-wrap:wrap;
+                padding:10px auto;
+                margin:30px 130px;
+                height:350px;
+            }
+            .placement-container{
+                background:#fff;
+                padding:20px 30px;
+                margin:10px 30px;
+                width:280px;
+                border-radius:5%;
+                height:100px;
+            }
+            .knowing-more{
+                padding:30px auto;
+                margin:10px auto;
+            }
+            .inner-placement a{
+                color:#fff;
+                background:#37474f;
+                padding: 10px 26px;
+                margin: 30px auto auto 10px;
+                font-family: 'Raleway', sans-serif;
+                text-decoration:none;
+            }
+            .inner-placement a:hover{
+                background:#2b60de;
+  
+            }
+        </style>
+          <div id="technology">
+              <table>
+                  <tr>
+                      <td><img  src="sot-logo.png" alt="SOT"></td>
+                      <td>SCHOOL OF TECHNOLOGY</td>
+                      <td><img  src="spt-logo.png" alt="SPT"></td>
+                      <td>SCHOOL OF PETROLEUM TECHNOLOGY</td>
+                      <td><img  src="sls-logo.png" alt="SLS"></td>
+                      <td>SCHOOL OF LIBERAL STUDIES</td>
+                      <td><img  src="spm-logo.jpg" alt="SPM"> </td>
+                      <td>SCHOOL OF PETROLEUM MANAGEMENT</td>
+                  </tr>
+              </table>
+          </div>
+          <!-- This is for Styling Technology Part -->
+          <style type="text/css">
+                #technology{
+                    font-family: 'Raleway', sans-serif;
+                    margin:30px 40px;
+                    padding:10px 90px;
+                }
+
+                #technology img{
+                    width:55px;
+                    height:55px;
+                    margin:40px 10px 30px 65px;
+                }
+          </style>
+          <iframe width="500" height="300" style="margin:5px 150px 10px 400px; padding:10px 100px 50px 120px; "src="https://www.youtube.com/embed/4hGAet7XyDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <div class="footer">
+              <div class="inner-footer">
+                <div class="footer-items">
+                    <h2>CONTACT</h2>
+                    <div class="border">
+                        <ul>
+                            <li>PDPU</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Knowledge Corridor, Raysan</li>
+                            <li>Gandhinagar 382 007</li>
+                            <li>Gujarat(India)</li>
+                            <li><i class="fas fa-phone-alt"></i> Tel: +91 79 23275060 </li>
+                            <li><i class="fas fa-phone"></i> Fax: +91 79 23275030</li>
+                        </ul>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/sot.pdpu.73"  ><i class="fab fa-facebook" arial-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/sot_pdpu/?hl=en" ><i class="fab fa-instagram"arial-hidden="true"></i></a> 
+                        <a href="https://www.twitter.com" ><i class="fab fa-twitter" arial-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <h2>THE UNIVERSITY</h2>
+                    <div class="border">
+                        <ul>
+                            <li>ADMISSION</li>
+                            <li>ACADEMICS</li>
+                            <li>RESEARCH</li>
+                            <li>CAMPUS LIFE</li>
+                            <li>INTERNATIONALISATION </li>
+                            <li>PRIVACY POLICY</li>
+                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <h2>QUICK LINKS</h2>
+                    <div class="border">
+                        <ul>
+                            <li>MULTIMEDIA</li>
+                            <li>DOWNLOADS</li>
+                            <li>PLACEMENT</li>
+                            <li>NIIRF</li>
+                            <li>ARIIA 2020 REPORT </li>
+                    
+                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <h2>PDPU SCHOOLS</h2>
+                    <div class="border">
+                        <ul>
+                            <li>MANAGEMENT</li>
+                            <li>PETROLEUM TECHNOLOGY</li>
+                            <li>TECHNOLOGY</li>
+                            <li>LIBERAL STUDIES</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <h2>EMERGENCY INFO</h2>
+                    <div class="border">
+                        <ul>
+                            <li>WOMEN'S CALL</li>
+                            <li>CENTRE FOR COUNSELLING</li>
+                            <li>SERVICES</li>
+                            <li>ANTI RAGGING</li>
+                            <li>ANTI RAGGING CIRCULAR</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="footer-bottom">
+                    Copyright &copy; Pandit Deendayal Petroleum University | Gandhinagar Designed and developed by Kevan
+                </div>
+            </div>
+            <!-- This is Footer Styling -->
+            <style type="text/css">
+                .footer{
+                    width:100%;
+                    background:#00121b;
+                    display:block;
+                    font-family: 'Raleway', sans-serif;
+   
+                }   
+                .footer h2{
+                    text-align:center;
+                }
+                .inner-footer{
+                    width:95%;
+                    margin:auto;
+                    padding:30px 10px;
+                    display:flex;
+                    flex-wrap:wrap;
+                    box-sizing:border-box;
+                    justify-content:center;
+   
+                }           
+                .footer-items{
+                    width:20%;
+                    padding:10px 20px;
+                    box-sizing:border-box;
+                } 
+                h2{
+                    padding:10px 0;
+                    font-size:20px;
+                    color:#fff;
+                    text-transform:uppercase;
+                } 
+                .footer-items ul{
+                    list-style:none;
+                    color:#fff;
+                    font-size:13px;
+                    letter-spacing:0.5px;
+                } 
+                .footer-items ul li{
+                    margin:10px 0;
+                    height:25px;
+                    color: #c9c0c0;
+
+                }
+                .footer-items li:hover{
+                    color:#fff;
+                }
+                .social-media{
+                    width:100%;
+                    color:#fff;
+                    text-align:center;
+                }
+                .social-media a{
+                    text-decoration:none;
+                }
+                .social-media i{
+                    height:15px;
+                    width:15px;
+                    margin:20px;
+                    padding:10px;
+                    color:#fff;
+                    border-radius:50%;
+                    border:1px solid grey;
+                    transition:0.3s;
+                } 
+                .social-media i:hover{
+                    background:grey;
+                }
+                .footer-bottom{
+                    padding:10px;
+                    background:#3d545f;
+                    color:#fff;
+                    font-size:12px;
+                    text-align:center;
+                }
+            </style>
+    </script>
+    </body>
+</html>
